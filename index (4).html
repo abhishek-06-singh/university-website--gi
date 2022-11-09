@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design by ABHISHEK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,200;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/pro2-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()" ></i>
+               <ul>
+                <li><a href="/index.html" target="_blank" rel="noopener noreferrer">HOME</a></li>
+                <li><a href="/index (2).html" target="_blank" rel="noopener noreferrer">ABOUT</a></li>
+                <li><a href="/index (3).html" target="_blank" rel="noopener noreferrer">COURSES</a></li>
+                <li><a href="/index (4).html" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+                <li><a href="/index (5).html"target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+
+
+            </ul>
+
+            </div>
+            <i class="fa fa-chevron-circle-down" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2022-2025</h1>
+    </section>
+
+
+
+<!---------blog page content---------->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/pro2-certificate.jpg">
+            <h2>Our Certificate & Online Programs</h2>
+            <p>A certificate program is a specialized education designed to develop or
+                 strengthen specific career skills. A certificate program is considered 
+                 continuing education in some cases because it builds on your knowledge of 
+                  particular career or industry. In other cases, it requires no prior education 
+                  and can helpyou learn about a subject, career, or industry to pursue related jobs. </p>
+                  <br>
+                  <p>In this article, we’ll go over the differences between certificate programs
+                     and degrees, the benefits of completing a certificate program, and how you can 
+                     determine which certificate program is best for you.  
+                </p>
+                <br>
+                <p>Thanks to the expansion of online education and the growing demand for skilled employees,
+                     there are now myriad certificate programs available. Whether you’re interested in 
+                      from a storied college or university or a leading company, you have many options to 
+                      consider. </p>
+                      <br>
+                      <h3>Certificates tend to be divided into two levels:</h3>
+                        <ul>
+                            <li><p>Beginner programs are ideal for recent graduates who want to develop their skill 
+                                set in a
+                                 particular subject or industry—or career switchers interested in pivoting 
+                                 to new roles or industries 
+                                 who need a foundational understanding. For example, 
+                                you can earn a Professional Certificate in social media marketing 
+                                from Meta on Coursera.</p></li>
+                            <li><p>Advanced programs are ideal for those looking to move ahead in their career,
+                                 but who may benefit from fortifying important skills necessary to progress 
+                                 in their chosen career
+                                  or industry. For example,you can learn advanced data processes using the
+                                   database analysis language SQL. </p></li>    
+                        </ul>
+                        <h3>How long does a certificate program take? </h3>
+                        <p>The length of each certificate program depends on what you study, but 
+                             take far less time than a degree because they tend to prioritize practicality
+                              and job-ready skills. On average, certificate programs take around three 
+                              to seven months,
+                             depending on what you’re learning and how the program is structured. </p>
+
+                             <div class="comment-box">
+                                <h3>Leave a Comment</h3>
+                                <form class="comment-form">
+                                    <input type="text" placeholder="Enter Name">
+                                    <input type="text" placeholder="Enter Email">
+                                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                                    <button type="submit" class="hero-btn">POST COMMENT</button>
+
+                                </form>
+                             </div>
+                      
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>09</span>
+            </div>
+            <div><span>Data Science</span>
+                <span>21</span>
+                </div>
+            <div><span>Full Stack Devlopment</span>
+                <span>35</span>
+            </div>
+            <div><span>
+                Computer Science
+            </span><span>30</span>
+        </div>
+            <div><span>Machine learning</span><span>15</span>
+            </div>
+            <div><span>UX Designing</span><span>21</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!----javaScript for toggle menu---->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
